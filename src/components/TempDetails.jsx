@@ -43,7 +43,7 @@ function TempDetails() {
             title : "High",
             value : "37°"
         },{
-            id : 3,
+            id : 4,
             Icon : MdKeyboardArrowDown,
             title : "Low",
             value : "3°"

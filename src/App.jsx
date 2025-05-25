@@ -5,8 +5,18 @@ import SearchBar from './components/SearchBar';
 import TimeAndLocation from './components/TimeAndLocation';
 import TempDetails from './components/TempDetails';
 import Forecast from './components/Forecast';
+import getFormattedWeatherData from './services/weatherService';
 
-function App() {
+function App() { 
+  
+  const getWeatherData = async () => {
+    const data = await getFormattedWeatherData({
+      q: "London"
+    });
+    console.log(data);
+  }
+
+  getWeatherData();
   return (
     <>
     <div className="bg-[url(src/assets/img1.jpg)] bg-cover bg-center">

@@ -12,7 +12,7 @@ export default function Forecast() {
         {data.map((data,index) => (
             <div key = {index} 
             className='flex flex-col items-center justify-center'>
-                <p className='font-light text-sm font-semibold'>Wed</p>
+                <p className='font-semibold text-sm'>Wed</p>
             <img src="http://openweathermap.org/img/wn/01d@2x.png" 
             alt="whether Icon"
             className = "w-12 my-1"
